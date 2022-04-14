@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*  */
+
+* {
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.28s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+
+/* Basic Style */
+
+body {
+    background: linear-gradient(45deg, #273DAA, #6565e4e3, #273DAA, #6060e4e3, #273DAA) !important;
+}
+
+.container {
+    box-shadow: inset 6px 6px 26px -1px #979292c4 !important;
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #273DAA !important;
+    height: 95vh;
+}
+
+.overflow {
+    height: 60vh;
+    overflow: hidden;
+    overflow-y: scroll !important;
+}
+
+li * {
+    float: left;
+}
+
+li,
+h3 {
+    clear: both;
+    list-style: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+button {
+    border-radius: 6px !important;
+    padding: 8px;
+    margin: 0 8px !important;
+    border: 1px solid transparent;
+    background-color: #273DAA !important;
+    font-size: 14px !important;
+    cursor: pointer;
+    color: #FFFFFF !important;
+}
+
+button:hover {
+    background-color: transparent !important;
+    color: #273DAA !important;
+    border: 1px solid #273DAA !important;
+}
+
+button:hover svg {
+    color: #273DAA;
+}
+
+
+/* Heading */
+
+h3,
+label[for='new-task'] {
+    color: #333;
+    background-color: #576bc31c;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    border-bottom: 1px solid #273DAA;
+    padding: 15px 0 10px 20px;
+    text-transform: uppercase;
+}
+
+input {
+    font-size: 18px;
+    border-radius: 0;
+    background-color: rgb(240, 237, 237);
+    border-radius: 6px 0 0 6px !important;
+    border: none;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+input[type="text"]:focus {
+    color: #273DAA !important;
+}
+
+#addBtn {
+    margin-left: -5vh !important;
+    border-radius: 0 6px 6px 0 !important;
+}
+
+#addBtn:hover {
+    background-color: rgb(240, 237, 237) !important;
+    color: #273DAA !important;
+}
+
+
+/* New Task */
+
+label[for='new-task'] {
+    display: block;
+}
+
+input#new-task {
+    float: left;
+}
+
+p>button:hover {
+    color: #0FC57C;
+}
+
+
+/* Task list */
+
+li {
+    overflow: hidden;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+li:hover {
+    background-color: #4966f631;
+    color: #000;
+}
+
+li>input[type="checkbox"] {
+    position: relative;
+    top: 10px;
+    height: 3vh;
+    width: 3vh;
+}
+
+li>label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+}
+
+li>input[type="text"] {
+    width: 75%;
+}
+
+
+/* Completed */
+
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+/* Edit Task */
+
+ul li input[type=text] {
+    display: none;
+}
+
+ul li.editMode input[type=text] {
+    display: block;
+}
+
+ul li.editMode label {
+    display: none;
+}
+
+.delete {
+    background-color: red !important;
+}
+
+.edit {
+    background-color: #273DAA !important;
+    color: white;
+}
+
+.edit::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 200;
+    content: "\f044";
+    z-index: 3;
+    font-size: 16px !important;
+    padding: 5px !important;
+}
+
+.edit:hover {
+    color: #273DAA;
+    padding: 4px !important;
+}
+
+.delete:hover {
+    color: #e51d0f !important;
+    padding: 4px;
+    border-color: #e51d0f !important;
+}
+
+.edit::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 200 !important;
+    content: "\f044";
+    z-index: 3;
+    font-size: 14px !important;
+    padding: 5px !important;
+}
+
+.delete::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 200 !important;
+    content: "\f2ed";
+    z-index: 3;
+    font-size: 14px !important;
+    padding: 5px !important;
+}
